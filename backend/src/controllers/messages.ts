@@ -97,7 +97,7 @@ export async function syncMessages(req: Request, res: Response): Promise<void> {
       return;
     }
 
-    let messages;
+    let messages: any[] = [];
     if (lastId) {
       const lastMessage = await prisma.message.findUnique({ where: { id: lastId } });
       if (lastMessage) {

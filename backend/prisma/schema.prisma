@@ -12,7 +12,7 @@ model User {
   email      String   @unique
   password   String
   nickname   String
-  partnerId  String?
+  partnerId  String? @unique
   partner    User?    @relation("PartnerRelation", fields: [partnerId], references: [id])
   inversePartner User? @relation("PartnerRelation")
   sentMessages     Message[] @relation("SentMessages")
