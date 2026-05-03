@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Chat App",
+    "slug": "chat-app",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.chat.app"
+    }
+  }
+}

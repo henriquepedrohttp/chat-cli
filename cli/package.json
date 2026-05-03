@@ -1,0 +1,27 @@
+{
+  "name": "chat-cli",
+  "version": "1.0.0",
+  "description": "Chat CLI client",
+  "main": "dist/index.js",
+  "bin": {
+    "chat": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "commander": "^11.1.0",
+    "crypto-js": "^4.2.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/crypto-js": "^4.2.1",
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
